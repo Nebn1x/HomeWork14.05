@@ -18,15 +18,15 @@ public class FigureSupplier {
         int index = rand.nextInt(FigureSupplier.Figures.values().length);
         switch (FigureSupplier.Figures.values()[index]) {
             case SQUARE:
-                return new Square(colorSupplier.getRandomColor(), rand.nextDouble(100));
+                return new Square(colorSupplier.getRandomColor(), rand.nextInt(10));
             case RECTANGLE:
-                return new Rectangle(colorSupplier.getRandomColor(), rand.nextDouble(100), rand.nextDouble(100));
+                return new Rectangle(colorSupplier.getRandomColor(), rand.nextInt(10), rand.nextInt(10));
             case RIGHT_TRIANGLE:
-                return new RightTriangle(rand.nextDouble(100), rand.nextDouble(100), colorSupplier.getRandomColor());
+                return new RightTriangle(rand.nextInt(10), rand.nextInt(10), colorSupplier.getRandomColor());
             case CIRCLE:
-                return new Circle(colorSupplier.getRandomColor(), rand.nextDouble(100));
+                return new Circle(colorSupplier.getRandomColor(), rand.nextInt(10));
             case ISOSCELES_TRAPEZOID:
-                return new IsoscelesTrapezoid(colorSupplier.getRandomColor(), rand.nextDouble(100), rand.nextDouble(100), rand.nextDouble(100));
+                return new IsoscelesTrapezoid(colorSupplier.getRandomColor(), rand.nextInt(10), rand.nextInt(10), rand.nextInt(10));
             default:
                 return getDefaultFigure();
         }

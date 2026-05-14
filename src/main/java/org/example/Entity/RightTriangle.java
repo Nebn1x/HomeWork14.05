@@ -2,10 +2,10 @@ package org.example.Entity;
 
 public class RightTriangle extends Figure {
 
-    private final double leg1;
-    private final double leg2;
+    private final int leg1;
+    private final int leg2;
 
-    public RightTriangle(double leg1, double leg2, String color) {
+    public RightTriangle(int leg1, int leg2, String color) {
         super(color);
         this.leg1 = leg1;
         this.leg2 = leg2;
@@ -13,7 +13,7 @@ public class RightTriangle extends Figure {
 
     @Override
     public double getArea() {
-        return (leg1 * leg2) / 2;
+        return (double) (leg1 * leg2) / 2;
     }
 
     @Override

@@ -2,9 +2,9 @@ package org.example.Entity;
 
 public class Circle extends Figure {
 
-    private final double radius;
+    private final int radius;
 
-    public Circle(String color, double radius) {
+    public Circle(String color, int radius) {
         super(color);
         this.radius = radius;
     }
@@ -18,7 +18,7 @@ public class Circle extends Figure {
     public void draw() {
         System.out.println(
                 "Figure: circle, " +
-                        "area: " + getArea() + " sq. units, " +
+                        "area: " + String.format("%.2f", getArea()) + " sq. units, " +
                         "radius: " + radius + " units, " +
                         "color: " + getColor()
         );

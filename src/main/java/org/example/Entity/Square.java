@@ -2,9 +2,9 @@ package org.example.Entity;
 
 public class Square extends Figure {
 
-    private final double side;
+    private final int side;
 
-    public Square(String color, double side) {
+    public Square(String color, int side) {
         super(color);
         this.side = side;
     }
