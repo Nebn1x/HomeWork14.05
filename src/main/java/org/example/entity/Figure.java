@@ -1,4 +1,4 @@
-package org.example.Entity;
+package org.example.entity;
 
 public abstract class Figure {
     private final String color;

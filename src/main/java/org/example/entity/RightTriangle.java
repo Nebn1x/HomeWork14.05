@@ -1,11 +1,11 @@
-package org.example.Entity;
+package org.example.entity;
 
 public class RightTriangle extends Figure {
 
     private final int leg1;
     private final int leg2;
 
-    public RightTriangle(int leg1, int leg2, String color) {
+    public RightTriangle(String color, int leg1, int leg2) {
         super(color);
         this.leg1 = leg1;
         this.leg2 = leg2;
