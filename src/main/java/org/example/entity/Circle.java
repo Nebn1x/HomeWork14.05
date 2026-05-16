@@ -1,5 +1,7 @@
 package org.example.entity;
 
+import org.example.annotations.DefaultArea;
+
 public class Circle extends Figure {
 
     private final int radius;
@@ -9,6 +11,7 @@ public class Circle extends Figure {
         this.radius = radius;
     }
 
+    @DefaultArea
     @Override
     public double getArea() {
         return radius * radius * Math.PI;
