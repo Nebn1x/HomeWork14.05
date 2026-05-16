@@ -44,8 +44,7 @@ public class Main {
            System.out.println(e.getMessage());
         }
 
-        List<Figure> figures = figureStorage.getFigures();
-        methodService.printDefaultMethods(figures);
+        methodService.printDefaultMethods(figureStorage);
 
     }
 }
