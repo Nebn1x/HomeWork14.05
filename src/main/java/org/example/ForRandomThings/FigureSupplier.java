@@ -1,29 +1,28 @@
-package org.example.forRandomThings;
+package org.example.ForRandomThings;
 
-import org.example.entity.Circle;
-import org.example.entity.Figure;
-import org.example.entity.IsoscelesTrapezoid;
-import org.example.entity.Rectangle;
-import org.example.entity.RightTriangle;
-import org.example.entity.Square;
+import org.example.Entity.Circle;
+import org.example.Entity.Figure;
+import org.example.Entity.IsoscelesTrapezoid;
+import org.example.Entity.Rectangle;
+import org.example.Entity.RightTriangle;
+import org.example.Entity.Square;
 
 import java.util.Random;
 
 public class FigureSupplier {
 
-    private final ColorSupplier colorSupplier = new ColorSupplier();
+    ColorSupplier colorSupplier = new ColorSupplier();
     private final Random rand = new Random();
-    private final Figures[] figuresArray = Figures.values();
 
     public Figure getRandomFigure() {
-        int index = rand.nextInt(figuresArray.length);
-        switch (figuresArray[index]) {
+        int index = rand.nextInt(FigureSupplier.Figures.values().length);
+        switch (FigureSupplier.Figures.values()[index]) {
             case SQUARE:
                 return new Square(colorSupplier.getRandomColor(), rand.nextInt(10));
             case RECTANGLE:
                 return new Rectangle(colorSupplier.getRandomColor(), rand.nextInt(10), rand.nextInt(10));
             case RIGHT_TRIANGLE:
-                return new RightTriangle(colorSupplier.getRandomColor(), rand.nextInt(10), rand.nextInt(10));
+                return new RightTriangle(rand.nextInt(10), rand.nextInt(10), colorSupplier.getRandomColor());
             case CIRCLE:
                 return new Circle(colorSupplier.getRandomColor(), rand.nextInt(10));
             case ISOSCELES_TRAPEZOID:

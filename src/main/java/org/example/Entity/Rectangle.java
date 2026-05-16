@@ -1,4 +1,4 @@
-package org.example.entity;
+package org.example.Entity;
 
 public class Rectangle extends Figure {
 

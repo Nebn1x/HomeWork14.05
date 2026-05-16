@@ -1,7 +1,7 @@
 package org.example;
 
-import org.example.entity.Figure;
-import org.example.forRandomThings.FigureSupplier;
+import org.example.Entity.Figure;
+import org.example.ForRandomThings.FigureSupplier;
 
 public class Main {
     public static void main(String[] args) {
