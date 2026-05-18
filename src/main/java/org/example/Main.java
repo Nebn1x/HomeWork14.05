@@ -2,7 +2,7 @@ package org.example;
 
 import org.example.entity.Figure;
 import org.example.exception.FigureNotFoundException;
-import org.example.forRandomThings.FigureSupplier;
+import org.example.randomthings.FigureSupplier;
 import org.example.entity.FigureStorage;
 import org.example.service.MethodService;
 
