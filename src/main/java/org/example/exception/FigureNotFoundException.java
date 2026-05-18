@@ -1,4 +1,4 @@
-package org.example.exeption;
+package org.example.exception;
 
 public class FigureNotFoundException extends RuntimeException {
     public FigureNotFoundException(String message) {

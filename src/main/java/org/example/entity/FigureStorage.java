@@ -1,6 +1,6 @@
 package org.example.entity;
 
-import org.example.exeption.FigureNotFoundException;
+import org.example.exception.FigureNotFoundException;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,10 +22,11 @@ public class FigureStorage <T extends Figure> {
         return Collections.unmodifiableList(figures);
     }
 
-    public void getFigureById(int index) {
+    public T getFigureById(int index) {
         if (index < 0 || index >= figures.size()) {
             throw new FigureNotFoundException("Figure #" + index + " not found");
         }
+        return figures.get(index);
     }
 
     public int size () {
