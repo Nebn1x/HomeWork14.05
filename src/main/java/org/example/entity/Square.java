@@ -1,5 +1,8 @@
 package org.example.entity;
 
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode(callSuper = true)
 public class Square extends Figure {
 
     private final int side;

@@ -1,5 +1,8 @@
 package org.example.entity;
 
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode(callSuper = true)
 public class RightTriangle extends Figure {
 
     private final int leg1;
