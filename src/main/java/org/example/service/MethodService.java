@@ -2,7 +2,7 @@ package org.example.service;
 
 import org.example.annotations.DefaultArea;
 import org.example.entity.Figure;
-import org.example.entity.FigureStorage;
+import org.example.storage.FigureStorage;
 
 import java.lang.reflect.Method;
 
