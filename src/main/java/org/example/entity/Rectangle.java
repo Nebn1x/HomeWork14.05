@@ -1,5 +1,8 @@
 package org.example.entity;
 
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode(callSuper = true)
 public class Rectangle extends Figure {
 
     private final int width;

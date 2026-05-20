@@ -1,4 +1,4 @@
-package org.example.forRandomThings;
+package org.example.randomthings;
 
 import org.example.entity.Circle;
 import org.example.entity.Figure;

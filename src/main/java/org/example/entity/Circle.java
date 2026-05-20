@@ -1,7 +1,9 @@
 package org.example.entity;
 
+import lombok.EqualsAndHashCode;
 import org.example.annotations.DefaultArea;
 
+@EqualsAndHashCode(callSuper = true)
 public class Circle extends Figure {
 
     private final int radius;
